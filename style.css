@@ -61,6 +61,7 @@ ul {
     max-width: 1180px;
     margin-inline: auto;
     padding-inline: var(--padding-inline-section);
+    overflow: hidden;
 }
 
 .flex {
@@ -84,6 +85,7 @@ ul {
     color: white !important;
     box-shadow: 0 0 2px var(--secondary-text-color);
     font-weight: 500;
+    text-align: center;
     transition: 0.2s ease-out;
 }
 
@@ -140,6 +142,10 @@ ul {
     column-gap: 40px;
 }
 
+.nav-toogle{
+    display: none;
+}
+
 /* header */
 
 header {
@@ -152,7 +158,7 @@ header {
 }
 
 .header-text {
-    max-width: 40vw;
+    width: 40vw;
 }
 
 .header-text p {
@@ -160,7 +166,7 @@ header {
 }
 
 .header-image img {
-    width: 600px;
+    width: 100%;
 }
 
 /* companies section */
@@ -172,7 +178,9 @@ header {
 }
 
 .logos {
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
 }
 
 .logo {
@@ -203,7 +211,7 @@ header {
 .features-area {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 25px;
     margin-top: 30px;
 }
 
@@ -253,6 +261,7 @@ header {
 }
 
 .examples-area {
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 30px;
 }
@@ -312,7 +321,8 @@ header {
 }
 
 .pannel-container {
-    padding-block: 50px;
+    padding: 50px 40px;
+    gap: 20px;
 }
 
 
@@ -353,7 +363,7 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 250px;
+    width: 50%;
 }
 
 .pannel-upper-text {
@@ -373,7 +383,7 @@ header {
 .cta-section-container{
     flex-direction: column;
     gap: 40px;
-    
+    text-align: center;
 }
 
 .cta-section-container p{
@@ -391,6 +401,7 @@ footer{
 .footer-container{
     align-items: flex-start;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .link-column{
@@ -407,6 +418,7 @@ footer{
 }
 
 .sub-footer-container{
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
 }

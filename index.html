@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moder website | Flex</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media_queries.css">
 </head>
 
 <body>
@@ -25,7 +26,7 @@
             <div class="company-logo">
                 <img src="assets/asset 1.png" alt="company-logo">
             </div>
-            <div class="nav-links">
+            <div class="nav-links" id="nav-links">
                 <ul class="flex">
                     <li><a href="#" class="hover-link">Products</a></li>
                     <li><a href="#" class="hover-link">Customer</a></li>
@@ -35,6 +36,11 @@
                     <li><a href="#" class="hover-link primary-btn">Sign up</a></li>
                 </ul>
             </div>
+
+            <a href="#" class="nav-toogle hover-link" id="nav-toogle">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+            
         </div>
     </nav>
 
@@ -141,7 +147,7 @@
 
     
     <section class="big-features-section">
-        <div class="container big-feature-container flex">
+        <div class="container big-feature-container flex" id="second-big-feature">
             
             <div class="feature-content flex">
                 <div class="small-bold-text">Optimisation for</div>
@@ -309,6 +315,21 @@
     </div>
 
     <script src="https://kit.fontawesome.com/c6cc394991.js" crossorigin="anonymous"></script>
+
+    <script>
+
+        const navLinks = document.getElementById("nav-links");
+
+        const toogleButton = document.getElementById("nav-toogle");
+
+        toogleButton.addEventListener('click',()=>{
+
+            navLinks.classList.toggle('active');
+
+        })
+
+
+    </script>
 </body>
 
 </html>

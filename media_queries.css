@@ -1,0 +1,147 @@
+@media screen and (max-width : 991px) {
+
+    .example-card h3{
+        font-size: 1rem;
+    }
+
+    .main-nav{
+        overflow: initial;
+        position: relative;
+    }
+
+    .nav-links{
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        background-color: white;
+        padding-block: 60px;
+    }
+
+    .active{
+        display: block;
+    }
+
+    .nav-links ul{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .nav-toogle{
+        margin-right: 20px;
+        display: block;
+    }
+
+    .examples-area{
+        gap: 20px;
+    }
+
+    .example-card:nth-child(n){
+        width: calc(50% - 10px);
+        height: 200px;
+    }
+
+    .cta-section{
+        padding-block: 80px;
+    }
+
+    .pannel-container{
+        flex-direction: column-reverse;
+    }
+
+    .pannel-left{
+        padding-inline: 50px;
+    }
+
+    .pannel-right{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width : 767px) {
+    .primary-btn{
+        width: 100%;
+    }
+
+    .header-section{
+        flex-direction: column-reverse;    
+    }
+    
+    .header-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .features-card{
+        width: calc(50% - 12.5px);
+    }
+
+    .big-feature-container{
+        flex-direction: column;
+    }
+
+    #second-big-feature{
+        flex-direction: column-reverse;
+    }
+
+    .pannel-left ul {
+        flex-direction: column;
+    }
+
+    .pannel-items{
+        width: 100%;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link-column{
+        align-items: center;
+    }
+
+    .socialMedia-links{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width : 479px) {
+    :root{
+        --padding-inline-section: 10px; 
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    h4{
+        font-size: 70%;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    .features-card{
+        width: 100%;
+    }
+
+    .example-card:nth-child(n){
+        width: 100%;
+    }
+
+    .pannel-left{
+        padding-inline: 0;
+    }
+    
+}
