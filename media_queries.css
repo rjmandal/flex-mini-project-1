@@ -1,87 +1,88 @@
 @media screen and (max-width : 991px) {
 
-    .example-card h3{
+    .example-card h3 {
         font-size: 1rem;
     }
 
-    .main-nav{
+    .main-nav {
         overflow: initial;
         position: relative;
     }
 
-    .nav-links{
-        display: none;
+    .nav-links {
         position: absolute;
-        left: 0;
+        left: -100%;
         top: 100%;
         width: 100%;
         background-color: white;
         padding-block: 60px;
+        transition: 0.3s ease-in-out;
     }
 
-    .active{
-        display: block;
+
+    .active {
+        left: 0;
     }
 
-    .nav-links ul{
+    .nav-links ul {
         flex-direction: column;
         gap: 30px;
     }
 
-    .nav-toogle{
+    .nav-toogle {
         margin-right: 20px;
         display: block;
     }
 
-    .examples-area{
+    .examples-area {
         gap: 20px;
     }
 
-    .example-card:nth-child(n){
+    .example-card:nth-child(n) {
         width: calc(50% - 10px);
         height: 200px;
     }
 
-    .cta-section{
+    .cta-section {
         padding-block: 80px;
     }
 
-    .pannel-container{
+    .pannel-container {
         flex-direction: column-reverse;
     }
 
-    .pannel-left{
+    .pannel-left {
         padding-inline: 50px;
     }
 
-    .pannel-right{
+    .pannel-right {
         width: 70%;
     }
 }
 
 @media screen and (max-width : 767px) {
-    .primary-btn{
+    .primary-btn {
         width: 100%;
     }
 
-    .header-section{
-        flex-direction: column-reverse;    
+    .header-section {
+        flex-direction: column-reverse;
     }
-    
+
     .header-text {
         width: 100%;
         text-align: center;
     }
 
-    .features-card{
+    .features-card {
         width: calc(50% - 12.5px);
     }
 
-    .big-feature-container{
+    .big-feature-container {
         flex-direction: column;
     }
 
-    #second-big-feature{
+    #second-big-feature {
         flex-direction: column-reverse;
     }
 
@@ -89,59 +90,59 @@
         flex-direction: column;
     }
 
-    .pannel-items{
+    .pannel-items {
         width: 100%;
     }
 
-    .footer-container{
+    .footer-container {
         flex-direction: column;
         align-items: center;
     }
 
-    .link-column{
+    .link-column {
         align-items: center;
     }
 
-    .socialMedia-links{
+    .socialMedia-links {
         margin-left: 0;
     }
 }
 
 @media screen and (max-width : 479px) {
-    :root{
-        --padding-inline-section: 10px; 
+    :root {
+        --padding-inline-section: 10px;
     }
-    
+
     h1 {
         font-size: 2rem;
     }
-    
+
     h2 {
         font-size: 1.5rem;
     }
-    
+
     h3 {
         font-size: 1.2rem;
     }
 
-    h4{
+    h4 {
         font-size: 70%;
     }
 
-    p{
+    p {
         font-size: 1rem;
     }
 
-    .features-card{
+    .features-card {
         width: 100%;
     }
 
-    .example-card:nth-child(n){
+    .example-card:nth-child(n) {
         width: 100%;
     }
 
-    .pannel-left{
+    .pannel-left {
         padding-inline: 0;
     }
-    
+
 }
